@@ -1,0 +1,5 @@
+/* Agrega líneas verticales entre las columnas */
+.table th,
+.table td {
+    border-right: 1px solid white;
+}
