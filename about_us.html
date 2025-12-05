@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>¿Quiénes Somos?</title>
+
+   <!--  bootstrap css -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container-fluid mt-12 bg-dark flex">
+    <div class="contenedor">
+    <header class="d-flex justify-content-between align-items-center mb-4">
+        <img src="img/logo.svg" alt="Logo de la empresa" style="width: 100px;">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+             <!-- Botón Hamburguesa para dispositivos móviles -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Elementos de Navegación -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="about_us.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contáctanos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="intranet/inicio_sesion.php">Mi cuenta</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+ 
+    </header>  
+    <div class="contenido">
+    
+    <div class="text-center">
+        <h1 class="mb-4">¿Qué hace a Amanita tan especial?</h1>
+        <!-- <h2 class="mb-5">Lo  que caracteriza </h2> -->
+        <!-- <button class="btn btn-lg">Explora</button> -->
+    </div>
+    </div>
+</div>
+</div>
+
+<section class="sobre-nosotros">
+    <h2 class="titulo">Lo que nos caracteriza:</h2>
+    <div class="contenedor-sobre-nosotros">
+        <div class="container d-block">
+            <h4 class="text-center">
+              En amanita, nos enorgullecemos de celebrar la diversidad creativa y el ingenio artesanal. Nuestra plataforma es un espacio vibrante donde convergen talentosos artesanos de todas partes de la República Mexicana, cada uno con su propia historia que contar a través de sus creaciones únicas. Desde delicadas joyas hechas a mano hasta exquisitas obras de arte en cerámica, tejido y mucho más, cada artículo que presentamos en nuestra plataforma ha sido cuidadosamente seleccionado por su calidad excepcional y su carácter distintivo.
+Nos apasiona fomentar la conexión entre los amantes del arte y los artesanos talentosos que dan vida a sus visiones. Creemos firmemente en el valor de lo hecho a mano y en el poder de apoyar a comunidades creativas en todo el mundo. Cada compra que realizas en Amanita no solo te permite poseer una pieza única, sino que también contribuye directamente al sustento y la continuación del arte hecho a mano en todas sus formas.
+
+Nuestro equipo está comprometido con la excelencia en cada aspecto de nuestra plataforma. Desde la curaduría cuidadosa de productos hasta la atención personalizada al cliente, nos esforzamos por ofrecer una experiencia de compra excepcional que refleje la pasión y el compromiso de los talentosos artesanos que representamos.
+
+Únete a nosotros en nuestro viaje para celebrar la creatividad, preservar las tradiciones artesanales y hacer del mundo un lugar más hermoso, una obra de arte a la vez.
+
+¡Bienvenido a Amanita!
+
+            </h4>
+        </div>           
+       
+    </div>
+</section>
+
+<!-- CARGA DINÁMICA DE FOOTER -->
+<div id="footer"></div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => document.getElementById('footer').innerHTML = html);
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
